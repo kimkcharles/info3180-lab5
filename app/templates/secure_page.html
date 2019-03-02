@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block main %}
+{% include 'flash_messages.html' %}
+<h1>Welcome to the Secure Page</h1>
+<div class = 'welcome'>
+    <p>
+        Hello {{current_user.first_name}},
+        <br>
+        Thank you for logging in.  
+        Remember to: <br>
+        Strive for excellence<br>
+        Maximize competence and...<br> 
+        Enjoy your experience.
+        
+    </p>
+</div>
+{% endblock %}
